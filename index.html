@@ -7,49 +7,53 @@
     <link rel="stylesheet" href="./src/styles/styles.css">
 </head>
 <body>
-    <img src="./src/assets/logo.svg" alt="logo" id="logo">
-    <div id="card">
-        <div id="form-group">
-            <div class="form-container">
-                <label for="bill"> Bill </label>
-                <div>
-                    <img src="./src/assets/icon-dollar.svg" alt="person icon">
-                    <input type="text" id="bill" placeholder="0">
+    <div id="container">
+        <img src="./src/assets/logo.svg" alt="logo" id="logo">
+        <div id="card">
+            <div id="form-group">
+                <div class="form-container">
+                    <label for="bill"> Bill </label>
+                    <div>
+                        <img src="./src/assets/icon-dollar.svg" alt="person icon">
+                        <input type="text" id="bill" placeholder="0">
+                    </div>
+                </div>
+                <label for="tips-container"> Select Tip %</label>
+                <div id="tips-container">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                    <button>25%</button>
+                    <button>50%</button>
+                    <button id="custom">Custom</button>
+                </div>
+                <div class="form-container">
+                    <label for="number_of_people"> Number of People </label>
+                    <div>
+                        <img src="./src/assets/icon-person.svg" alt="person icon">
+                        <input type="text" id="number_of_people" placeholder="0">
+                    </div>
                 </div>
             </div>
-            <label for="tips-container"> Select Tip %</label>
-            <div id="tips-container">
-                <button>5%</button>
-                <button>10%</button>
-                <button>15%</button>
-                <button>25%</button>
-                <button>50%</button>
-                <button>Custom</button>
-            </div>
-            <div class="form-container">
-                <label for="number_of_people"> Number of People </label>
+            <div id="result">
                 <div>
-                    <img src="./src/assets/icon-person.svg" alt="person icon">
-                    <input type="text" id="number_of_people" placeholder="0">
+                    <div class="result-container">
+                        <div>
+                            <h3>Tip Amount</h3>
+                            <span>/ person</spa>
+                        </div>
+                        <h1>$0.00</h1>
+                    </div>
+                    <div class="result-container">
+                        <div>
+                            <h3>Total</h3>
+                            <span>/ person</span>
+                        </div>
+                        <h1>$0.00</h1>
+                    </div>
                 </div>
+                <button>RESET</button>
             </div>
-        </div>
-        <div id="resutl">
-            <div id="result-container">
-                <div>
-                    <h3>Tip Amount</h3>
-                    <span>/ person</span>
-                </div>
-                <h1>$0.00</h1>
-            </div>
-            <div id="result-container">
-                <div>
-                    <h3>Total</h3>
-                    <span>/ person</span>
-                </div>
-                <h1>$0.00</h1>
-            </div>
-            <button>Reset</button>
         </div>
     </div>
 </body>
