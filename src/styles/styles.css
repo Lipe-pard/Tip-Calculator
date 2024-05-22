@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: hsl(189, 41%, 97%);
   font-family: "Space Mono", monospace;
@@ -133,4 +138,56 @@ body {
   width: 80%;
   padding: 1rem 2rem;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    padding: 0;
+  }
+  #container #logo {
+    width: 5rem;
+    margin: 1rem 0;
+  }
+  #container #card {
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+  }
+  #container #card #form-group {
+    width: auto;
+    gap: 0.5rem;
+  }
+  #container #card #form-group label {
+    font-size: 1rem;
+  }
+  #container #card #form-group #tips-container button {
+    width: 45%;
+    height: 3rem;
+  }
+  #container #card #form-group .form-container img {
+    position: absolute;
+    left: 1rem;
+    width: 0.8rem;
+  }
+  #container #card #form-group .form-container input {
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  #container #card #result {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #container #card #result .result-container {
+    margin: 1rem 0;
+  }
+  #container #card #result .result-container div h3 {
+    font-size: 1rem;
+  }
+  #container #card #result .result-container h1 {
+    font-size: 2rem;
+  }
+  #container #card #result button {
+    font-size: 1rem;
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
